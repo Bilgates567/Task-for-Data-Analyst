@@ -1,0 +1,51 @@
+/* General styles for the webpage */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Power BI report containers with heading */
+  .powerbi-report {
+    margin-bottom: 20px;
+  }
+  
+  .powerbi-report h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive Power BI report containers */
+  .powerbi-report iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    background-color: #f9f9f9;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Tablets and smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .powerbi-report iframe {
+      height: 400px;
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 480px) {
+    .powerbi-report iframe {
+      height: 200px;
+    }
+  }
+  
